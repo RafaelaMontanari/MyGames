@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8469EBD024C347B3007859BF /* ConsoleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469EBCF24C347B3007859BF /* ConsoleManager.swift */; };
 		8482F50C24BE8526001FAB5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482F50B24BE8526001FAB5F /* AppDelegate.swift */; };
 		8482F50E24BE8526001FAB5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482F50D24BE8526001FAB5F /* SceneDelegate.swift */; };
 		8482F51324BE8526001FAB5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482F51124BE8526001FAB5F /* Main.storyboard */; };
@@ -17,9 +18,21 @@
 		8482F52624BEA0B1001FAB5F /* ConsolesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482F52524BEA0B1001FAB5F /* ConsolesTableViewController.swift */; };
 		8482F52924BEA16B001FAB5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482F52824BEA16B001FAB5F /* GameViewController.swift */; };
 		8482F52B24BEA1B4001FAB5F /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482F52A24BEA1B4001FAB5F /* AddEditViewController.swift */; };
+		84E5F02824C0F6F300CF869D /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5F02724C0F6F300CF869D /* GameTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84A0514A24C1E69C0021F3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8482F50024BE8526001FAB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8482F50724BE8526001FAB5F;
+			remoteInfo = MyGames;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8469EBCF24C347B3007859BF /* ConsoleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleManager.swift; sourceTree = "<group>"; };
 		8482F50824BE8526001FAB5F /* MyGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482F50B24BE8526001FAB5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8482F50D24BE8526001FAB5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +45,8 @@
 		8482F52524BEA0B1001FAB5F /* ConsolesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolesTableViewController.swift; sourceTree = "<group>"; };
 		8482F52824BEA16B001FAB5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8482F52A24BEA1B4001FAB5F /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		84A0514524C1E69C0021F3EC /* MyGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E5F02724C0F6F300CF869D /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,9 +57,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84A0514224C1E69C0021F3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8469EBCE24C278B5007859BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8469EBCF24C347B3007859BF /* ConsoleManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8482F4FF24BE8526001FAB5F = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8482F50824BE8526001FAB5F /* MyGames.app */,
+				84A0514524C1E69C0021F3EC /* MyGamesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,10 +97,11 @@
 			children = (
 				8482F50B24BE8526001FAB5F /* AppDelegate.swift */,
 				8482F50D24BE8526001FAB5F /* SceneDelegate.swift */,
-				8482F52224BEA008001FAB5F /* Views */,
 				8482F51724BE8528001FAB5F /* Assets.xcassets */,
 				8482F51C24BE8528001FAB5F /* Info.plist */,
 				8482F51424BE8526001FAB5F /* MyGames.xcdatamodeld */,
+				8469EBCE24C278B5007859BF /* Models */,
+				8482F52224BEA008001FAB5F /* Views */,
 				8482F52724BEA0E1001FAB5F /* Controllers */,
 			);
 			path = MyGames;
@@ -79,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				8482F51124BE8526001FAB5F /* Main.storyboard */,
-				8482F52A24BEA1B4001FAB5F /* AddEditViewController.swift */,
 				8482F51924BE8528001FAB5F /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -88,9 +119,11 @@
 		8482F52724BEA0E1001FAB5F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8482F52324BEA07C001FAB5F /* GamesTableViewController.swift */,
+				8482F52A24BEA1B4001FAB5F /* AddEditViewController.swift */,
 				8482F52524BEA0B1001FAB5F /* ConsolesTableViewController.swift */,
 				8482F52824BEA16B001FAB5F /* GameViewController.swift */,
+				8482F52324BEA07C001FAB5F /* GamesTableViewController.swift */,
+				84E5F02724C0F6F300CF869D /* GameTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +148,24 @@
 			productReference = 8482F50824BE8526001FAB5F /* MyGames.app */;
 			productType = "com.apple.product-type.application";
 		};
+		84A0514424C1E69C0021F3EC /* MyGamesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A0514E24C1E69C0021F3EC /* Build configuration list for PBXNativeTarget "MyGamesTests" */;
+			buildPhases = (
+				84A0514124C1E69C0021F3EC /* Sources */,
+				84A0514224C1E69C0021F3EC /* Frameworks */,
+				84A0514324C1E69C0021F3EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A0514B24C1E69C0021F3EC /* PBXTargetDependency */,
+			);
+			name = MyGamesTests;
+			productName = MyGamesTests;
+			productReference = 84A0514524C1E69C0021F3EC /* MyGamesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +178,10 @@
 				TargetAttributes = {
 					8482F50724BE8526001FAB5F = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					84A0514424C1E69C0021F3EC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8482F50724BE8526001FAB5F;
 					};
 				};
 			};
@@ -144,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				8482F50724BE8526001FAB5F /* MyGames */,
+				84A0514424C1E69C0021F3EC /* MyGamesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +212,13 @@
 				8482F51B24BE8528001FAB5F /* LaunchScreen.storyboard in Resources */,
 				8482F51824BE8528001FAB5F /* Assets.xcassets in Resources */,
 				8482F51324BE8526001FAB5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A0514324C1E69C0021F3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,10 +236,27 @@
 				8482F51624BE8526001FAB5F /* MyGames.xcdatamodeld in Sources */,
 				8482F52924BEA16B001FAB5F /* GameViewController.swift in Sources */,
 				8482F52624BEA0B1001FAB5F /* ConsolesTableViewController.swift in Sources */,
+				84E5F02824C0F6F300CF869D /* GameTableViewCell.swift in Sources */,
+				8469EBD024C347B3007859BF /* ConsoleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A0514124C1E69C0021F3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A0514B24C1E69C0021F3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8482F50724BE8526001FAB5F /* MyGames */;
+			targetProxy = 84A0514A24C1E69C0021F3EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8482F51124BE8526001FAB5F /* Main.storyboard */ = {
@@ -346,6 +426,44 @@
 			};
 			name = Release;
 		};
+		84A0514C24C1E69C0021F3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGamesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaela.MyGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGames.app/MyGames";
+			};
+			name = Debug;
+		};
+		84A0514D24C1E69C0021F3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGamesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaela.MyGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGames.app/MyGames";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +481,15 @@
 			buildConfigurations = (
 				8482F52024BE8528001FAB5F /* Debug */,
 				8482F52124BE8528001FAB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A0514E24C1E69C0021F3EC /* Build configuration list for PBXNativeTarget "MyGamesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A0514C24C1E69C0021F3EC /* Debug */,
+				84A0514D24C1E69C0021F3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
